@@ -1,23 +1,34 @@
-# Project-Portfolio
+# Project Portfolio | Joan Dawes Sisson
     
-    Welcome to my project portfolio! This repository showcases a collection of my work, demonstrating my skills and experience in various areas of software development.
+    Welcome to my professional project portfolio. This repository serves as a centralized hub for full-stack applications, showcasing expertise in TypeScript, AI integration, and production-ready architectures.
     
-    ## Key Projects
+    ## 🚀 Featured Projects
     
-    Here are some of the key projects I've worked on:
+    ### [BudgetBites](./budgetbites)
+    An AI-powered meal planning and grocery budgeting application. It helps users optimize their spending by generating smart meal plans based on financial goals.
+    * **Tech:** TypeScript, React, AI Logic.
     
-    1.  **BudgetBites**
-        * Description: [Add a short description for BudgetBites here]
+    ### [BundleCraft](./bundlecraft)
+    A robust e-commerce solution focused on custom product bundling. It features dynamic pricing and inventory management for complex retail needs.
+    * **Tech:** Node.js, Drizzle ORM, PostgreSQL.
     
-    2.  **BundleCraft**
-        * Description: [Add a short description for BundleCraft here]
+    ### [Nurse Hub](./nurse-hub)
+    A specialized education platform for healthcare professionals. It provides practice certifications, study materials, and real-time performance analytics.
+    * **Tech:** React, Express, Tailwind CSS.
     
-    3.  **Nurse-Hub**
-        * Description: [Add a short description for Nurse-Hub here]
+    ### [Profileit](./profileit)
+    A POD (Print on Demand) Sales Intelligence Platform. Utilizes GPT-4 for market research and includes a full Stripe integration for subscription management.
+    * **Tech:** OpenAI API, Stripe, Full-stack TypeScript.
     
-    4.  **Profileit**
-        * Description: [Add a short description for Profileit here]
+    ### [RegReady](./regready)
+    A compliance-readiness and deployment tracker. Designed to help businesses organize regulatory requirements and audit documentation in a structured dashboard.
+    * **Tech:** Docker, Nginx, Node.js.
     
-    5.  **RegReady**
-        * Description: [Add a short description for RegReady here]
+    ---
+    
+    ## 🛠 Core Technical Stack
+    * **Languages:** TypeScript, SQL, Python
+    * **Frontend:** React, Vite, Tailwind CSS
+    * **Backend:** Node.js, Express, Drizzle ORM
+    * **Infrastructure:** Docker, Nginx, Linux (Ubuntu)
     

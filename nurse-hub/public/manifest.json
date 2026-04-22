@@ -1,0 +1,21 @@
+{
+  "name": "NurseHub",
+  "short_name": "NurseHub",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "description": "Essential tools for nurses in one platform.",
+  "icons": [
+    {
+      "src": "/assets/nursehub-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/nursehub-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+<!-- BudgetBites App Icon SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="256" fill="#f97316"/>
+  
+  <!-- Chef Hat -->
+  <g transform="translate(256, 140)">
+    <!-- Hat Base -->
+    <ellipse cx="0" cy="80" rx="100" ry="25" fill="#ffffff"/>
+    <!-- Hat Top -->
+    <path d="M -80 80 Q -80 20 -40 20 Q -20 0 0 0 Q 20 0 40 20 Q 80 20 80 80" fill="#ffffff"/>
+    <!-- Hat Band -->
+    <rect x="-90" y="75" width="180" height="15" fill="#e5e7eb"/>
+  </g>
+  
+  <!-- Food Items -->
+  <!-- Apple -->
+  <circle cx="180" cy="280" r="25" fill="#dc2626"/>
+  <ellipse cx="185" cy="265" rx="8" ry="15" fill="#16a34a"/>
+  
+  <!-- Carrot -->
+  <polygon points="320,260 340,290 330,300 310,270" fill="#ea580c"/>
+  <ellipse cx="315" cy="265" rx="3" ry="8" fill="#16a34a"/>
+  
+  <!-- Dollar Sign -->
+  <g transform="translate(256, 350)">
+    <rect x="-3" y="-40" width="6" height="80" fill="#ffffff"/>
+    <path d="M -20 -20 Q -20 -35 0 -35 Q 20 -35 20 -20 Q 20 -5 0 -5 Q -20 -5 -20 10 Q -20 25 0 25 Q 20 25 20 10" 
+          fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Smart Brain Icon -->
+  <g transform="translate(380, 380)">
+    <circle cx="0" cy="0" r="20" fill="#3b82f6"/>
+    <circle cx="-8" cy="-5" r="3" fill="#ffffff"/>
+    <circle cx="8" cy="-5" r="3" fill="#ffffff"/>
+    <path d="M -8 8 Q 0 12 8 8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- AR Scan Lines -->
+  <g transform="translate(130, 380)">
+    <rect x="-15" y="-15" width="30" height="30" fill="none" stroke="#ffffff" stroke-width="3"/>
+    <rect x="-20" y="-20" width="40" height="40" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+  </g>
+</svg>

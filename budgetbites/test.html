@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .logo { max-width: 200px; height: auto; margin: 20px auto; display: block; }
+    </style>
+</head>
+<body>
+    <h1>Total Wellness Test Page</h1>
+    <p>This is a test to see if the server is working</p>
+    <img src="/assets/IMG_7593_1754519435815.png" alt="Logo" class="logo" />
+    <p>Server timestamp: <span id="timestamp"></span></p>
+    <script>
+        document.getElementById('timestamp').textContent = new Date().toISOString();
+        console.log('Test page loaded successfully');
+    </script>
+</body>
+</html>

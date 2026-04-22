@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate BudgetBites PWA Icons</title>
+</head>
+<body>
+    <h1>BudgetBites PWA Icon Generator</h1>
+    <button onclick="generateIcons()">Generate All Icons</button>
+    <div id="icons"></div>
+    
+    <script>
+        function generateIcons() {
+            const sizes = [72, 96, 128, 144, 152, 192, 384, 512];
+            const iconsDiv = document.getElementById('icons');
+            
+            sizes.forEach(size => {
+                // Create canvas
+                const canvas = document.createElement('canvas');
+                canvas.width = size;
+                canvas.height = size;
+                const ctx = canvas.getContext('2d');
+                
+                // Orange background
+                ctx.fillStyle = '#f97316';
+                ctx.fillRect(0, 0, size, size);
+                
+                // White chef hat
+                const centerX = size / 2;
+                const centerY = size / 2.2;
+                const hatRadius = size * 0.15;
+                
+                ctx.fillStyle = '#ffffff';
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, hatRadius, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Dollar sign
+                ctx.fillStyle = '#ffffff';
+                ctx.font = `bold ${size * 0.3}px Arial`;
+                ctx.textAlign = 'center';
+                ctx.fillText('$', centerX, centerY + size * 0.25);
+                
+                // Convert to download link
+                const link = document.createElement('a');
+                link.download = `icon-${size}x${size}.png`;
+                link.href = canvas.toDataURL();
+                link.textContent = `Download ${size}x${size}`;
+                link.style.display = 'block';
+                link.style.margin = '5px';
+                
+                iconsDiv.appendChild(link);
+            });
+        }
+    </script>
+</body>
+</html>

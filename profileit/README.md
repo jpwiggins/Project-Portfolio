@@ -1,4 +1,4 @@
-# ProFylix - POD Sales Intelligence Platform
+# Profileit - POD Sales Intelligence Platform
 
 A comprehensive POD Sales Intelligence Platform that provides end-to-end solutions for print-on-demand sellers. The platform combines AI-powered buyer profiling, SEO optimization, profit analysis, marketing calendar planning, and design variation strategies.
 

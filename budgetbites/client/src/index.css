@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BudgetBites Header Styles - Healthy Fitness Theme */
+@layer components {
+  .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: linear-gradient(135deg, var(--header-start) 0%, var(--header-end) 100%);
+    border-bottom: 2px solid var(--primary);
+    position: sticky;
+    top: 0;
+    z-index: 50; /* consider using Tailwind’s z-50 utility instead */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+.logo {
+  height: 45px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) !important;
+}
+
+.header-text {
+  flex-grow: 1 !important;
+  text-align: center !important;
+  font-weight: bold !important;
+  font-size: 1.25rem !important;
+  padding: 0 1rem !important;
+  color: hsl(0, 0%, 15%) !important;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8) !important;
+}
+
+.login-link {
+  margin-left: auto !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+  color: var(--primary) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: var(--radius) !important;
+  background: color-mix(in oklch, var(--primary) 10%, white);
+  transition: color .15s ease, background-color .15s ease, transform .15s ease, box-shadow .15s ease;
+}
+.login-link:hover {
+  color: hsl(0, 0%, 100%) !important;
+  background: hsl(120, 60%, 50%) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+:root {
+  /* BudgetBites Healthy Fitness Theme */
+  --background: hsl(48, 100%, 96%); /* Light creamy yellow background */
+  --foreground: hsl(0, 0%, 15%); /* Dark text for readability */
+  --muted: hsl(48, 60%, 92%); /* Soft yellow muted */
+  --muted-foreground: hsl(0, 0%, 45%); /* Medium gray text */
+  --popover: hsl(48, 100%, 98%); /* Very light yellow */
+  --popover-foreground: hsl(0, 0%, 15%);
+  --card: hsl(48, 100%, 98%); /* Card background - very light yellow */
+  --card-foreground: hsl(0, 0%, 15%);
+  --border: hsl(48, 30%, 85%); /* Subtle yellow border */
+  --input: hsl(48, 30%, 90%); /* Input background */
+  --primary: hsl(120, 60%, 50%); /* Fresh green primary */
+  --primary-foreground: hsl(0, 0%, 100%); /* White text on green */
+  --secondary: hsl(35, 85%, 65%); /* Warm orange secondary */
+  --secondary-foreground: hsl(0, 0%, 15%); /* Dark text on orange */
+  --accent: hsl(48, 90%, 70%); /* Bright yellow accent */
+  --accent-foreground: hsl(0, 0%, 15%); /* Dark text on yellow */
+  --destructive: hsl(0, 84%, 60%); /* Red for destructive actions */
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(120, 60%, 50%); /* Green focus ring */
+  --radius: 0.5rem;
+  
+  /* Chart colors for healthy theme */
+  --chart-1: hsl(120, 60%, 50%); /* Green */
+  --chart-2: hsl(48, 90%, 70%); /* Yellow */
+  --chart-3: hsl(35, 85%, 65%); /* Orange */
+  --chart-4: hsl(120, 40%, 70%); /* Light green */
+  --chart-5: hsl(35, 70%, 80%); /* Light orange */
+}
+
+.dark {
+  /* BudgetBites Dark Mode - Healthy Theme */
+  --background: hsl(120, 15%, 8%); /* Dark green-tinted background */
+  --foreground: hsl(48, 30%, 95%); /* Light cream text */
+  --muted: hsl(120, 10%, 15%); /* Dark muted green */
+  --muted-foreground: hsl(48, 15%, 70%); /* Muted cream text */
+  --popover: hsl(120, 15%, 10%); /* Dark popover */
+  --popover-foreground: hsl(48, 30%, 95%);
+  --card: hsl(120, 15%, 10%); /* Dark card background */
+  --card-foreground: hsl(48, 30%, 95%);
+  --border: hsl(120, 10%, 20%); /* Dark border */
+  --input: hsl(120, 10%, 18%); /* Dark input background */
+  --primary: hsl(120, 50%, 45%); /* Darker green primary */
+  --primary-foreground: hsl(48, 30%, 95%);
+  --secondary: hsl(35, 70%, 55%); /* Darker orange secondary */
+  --secondary-foreground: hsl(0, 0%, 15%);
+  --accent: hsl(48, 80%, 60%); /* Darker yellow accent */
+  --accent-foreground: hsl(0, 0%, 15%);
+  --destructive: hsl(0, 70%, 50%); /* Red for destructive actions */
+  --destructive-foreground: hsl(48, 30%, 95%);
+  --ring: hsl(120, 50%, 45%); /* Green focus ring */
+  --radius: 0.5rem;
+  
+  /* Dark mode chart colors */
+  --chart-1: hsl(120, 50%, 45%); /* Dark green */
+  --chart-2: hsl(48, 80%, 60%); /* Dark yellow */
+  --chart-3: hsl(35, 70%, 55%); /* Dark orange */
+  --chart-4: hsl(120, 40%, 60%); /* Medium green */
+  --chart-5: hsl(35, 60%, 70%); /* Medium orange */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* BudgetBites Custom Components */
+@layer components {
+  .budget-card {
+    @apply bg-card border border-border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow;
+    background: linear-gradient(145deg, hsl(48, 100%, 98%) 0%, hsl(48, 60%, 96%) 100%);
+  }
+  .healthy-button {
+    @apply text-primary-foreground px-4 py-2 rounded-md font-medium;
+    background: linear-gradient(135deg, var(--primary) 0%, color-mix(in oklch, var(--primary) 85%, black) 100%);
+    transition: background-color .15s ease, color .15s ease, box-shadow .15s ease, transform .15s ease;
+  }
+  
+  .healthy-button:hover {
+    background: linear-gradient(135deg, color-mix(in oklch, var(--primary) 85%, black) 0%, color-mix(in oklch, var(--primary) 75%, black) 100%);
+  }
+  
+  .accent-button {
+    @apply text-secondary-foreground px-4 py-2 rounded-md font-medium;
+    background: linear-gradient(135deg, var(--secondary) 0%, color-mix(in oklch, var(--secondary) 85%, black) 100%);
+    transition: background-color .15s ease, color .15s ease;
+  }
+
+  .accent-button:hover {
+    background: linear-gradient(135deg, color-mix(in oklch, var(--secondary) 85%, black) 0%, color-mix(in oklch, var(--secondary) 75%, black) 100%);
+  }
+  
+  .nutrition-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+    background: hsl(48, 90%, 70%);
+    color: hsl(0, 0%, 15%);
+  }
+  
+  .price-tag {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold;
+    background: linear-gradient(135deg, hsl(120, 60%, 50%) 0%, hsl(120, 60%, 45%) 100%);
+    color: white;
+  }
+}
